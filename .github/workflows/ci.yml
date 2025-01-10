@@ -18,6 +18,6 @@ jobs:
       - name: "Test Swift Package Locally"
         run: swift test
       - name: "Test Swift (6.0) Package on Android"
-        uses: skiptools/swift-android-action@v1
+        uses: skiptools/swift-android-action@v2
 
 
