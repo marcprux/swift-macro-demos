@@ -10,14 +10,11 @@ on:
     - cron:  '45 2,13 * * *'
 jobs:
   test:
-    # emulator fails to launch with: HVF error: HV_UNSUPPORTED
-    #runs-on: macos-15
-    runs-on: macos-13
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: "Test Swift Package Locally"
         run: swift test
       - name: "Test Swift (6.0) Package on Android"
         uses: skiptools/swift-android-action@v2
-
 
